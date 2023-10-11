@@ -1,0 +1,79 @@
+:root {
+    --button-default-color: #02141E; 
+    --button-hover-color: linear-gradient(180deg, #01242F 0%, #246A81 100%);
+    --button-active-color:linear-gradient(180deg, #07161C 0%, #0C4760 48.44%, #003246 100%);
+    --button-inactive-color: #BABFC7;
+  }
+
+.custom-button{
+    border-radius: 100px;
+    line-height: 17px;
+    color: #fff;
+    border: none;
+  }
+
+  .custom-button .button-icon {
+    position: absolute;
+    left: 16px;
+    font-size: 16px;
+  }
+  
+  /* Button modes */
+  .default {
+    background: var(--button-default-color); 
+  }
+  
+  .hover{
+    background: var(--button-hover-color);
+  }
+  
+  .active {
+    background: var(--button-active-color);
+  }
+  
+  .inactive {
+    background: var(--button-inactive-color);
+    color: #3E4A60;
+    border-color: #3E4A60;
+    pointer-events: none; 
+  }
+  
+  /* Button with left Icon */
+  .small-leftIcon {
+    width: 116px;
+    height: 34px;
+    font-size: 14px;
+  }
+  
+  .medium-leftIcon {
+    width: 126px;
+    height: 34px;
+    font-size: 14px;
+  }
+  
+  .large-leftIcon {
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+  }
+  
+  /* Button with no Icon*/
+  .small {
+    width: 83px;
+    height: 27px;
+    font-size: 14;
+}
+  
+  .medium{
+    width: 110px;
+    height: 33px;
+    font-size:16px
+  }
+  
+  .large{
+    width: 128px;
+    height: 39px;
+    font-size:16px;
+  }
+  
+  
