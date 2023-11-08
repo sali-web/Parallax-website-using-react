@@ -15,12 +15,17 @@
   transform: translateX(-50%);
   width: 100%;
   display: flex;
-  max-width: 900px;
+  max-width: 880px;
   height: 35px;
   justify-content: space-between;
   padding: 2px 11px 2px 22px;
   border-radius: 65px;
-  background: #FFFFFF4D;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  );
   z-index: 100;
 }
 
@@ -37,11 +42,11 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .nav-links a.active {
-  color: #fff;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -53,7 +58,7 @@
 
 .nav-links button {
   width: 70px;
-  margin-left: 70px;
+  margin-left: 95px;
   margin-top: -4px;
   height: 25px;
   font-size: 12px;
