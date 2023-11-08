@@ -1,45 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Buttons from '../components/Buttons/Button';
+import Logo from "../Scenes/images/Logo.png";
 import "./styles.css";
-const header = () => {
-    const scrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+
+const Header = () => {
+  const [activeLink, setActiveLink] = useState('home');
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setActiveLink(sectionId);
+    }
+  };
+
   return (
     <header>
       <nav className="navbar">
         <ul className="nav-links">
-          <div className="logo">
-            <img src="your-logo.png" alt="Logo" />
-          </div>
-
           <li>
-            <a href="#home" onClick={() => scrollToSection('home')}>Home</a>
+            <div className="logo">
+              <img src={Logo} alt='logo' className='logo' />
+            </div>
           </li>
           <li>
-            <a href="#about" onClick={() => scrollToSection('about')}>About</a>
+            <a href="#home" onClick={() => scrollToSection('home')} className={activeLink === 'home' ? 'active' : ''}>Home</a>
           </li>
           <li>
-            <a href="#services" onClick={() => scrollToSection('services')}>Services</a>
+            <a href="#about" onClick={() => scrollToSection('about')} className={activeLink === 'about' ? 'active' : ''}>About</a>
           </li>
           <li>
-            <a href="#works" onClick={() => scrollToSection('works')}>Works</a>
+            <a href="#services" onClick={() => scrollToSection('services')} className={activeLink === 'services' ? 'active' : ''}>Services</a>
           </li>
           <li>
-            <a href="#blogs" onClick={() => scrollToSection('blogs')}>Blogs</a>
+            <a href="#works" onClick={() => scrollToSection('works')} className={activeLink === 'works' ? 'active' : ''}>Works</a>
           </li>
-
-          <div className="button">
-            <Buttons mode="hover" size="large">
-              Schedule a demo
-            </Buttons>
-          </div>
+          <li>
+            <a href="#how_it_works" onClick={() => scrollToSection('how_it_works')} className={activeLink === 'how_it_works' ? 'active' : ''}>How It Works</a>
+          </li>
+          <li>
+            <a href="#blogs" onClick={() => scrollToSection('blogs')} className={activeLink === 'blogs' ? 'active' : ''}>Blogs</a>
+          </li>
+          <li>
+            <div className="button">
+              <Buttons mode="hover" size="large">
+                Demo
+              </Buttons>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
-  )
-  };
-export default header;
+  );
+};
+
+export default Header;

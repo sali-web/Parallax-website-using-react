@@ -1,17 +1,21 @@
-import About from './about';
-import Blogs from "./blogs";
+import Scene0 from '../Scenes/Scene0.js';
+import WebsiteStats from "./WebsiteStats.js";
 import Services from "./services";
-import Home from "./home";
-import Works from "./works";
+import HowItWorks from "./howItWorks.js";
+import CustomerReview from "./customerReview.js";
+import Experts from "./experts.js";
+import Footer from "./footer.js";
 
 const main =() =>{
     return(
         <main className="main">
-            <Home/>
-            <About/>
+            <Scene0 />
+            <WebsiteStats />
             <Services/>
-            <Works/>
-            <Blogs/>
+            <HowItWorks/>
+            <CustomerReview />
+            <Experts />
+            <Footer/>   
         </main>
     );
 };

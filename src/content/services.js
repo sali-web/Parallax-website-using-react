@@ -1,15 +1,54 @@
+import templeImage from "./images/temple.png";
+import slideIcon from "./images/seemore.png";
 const services = () => {
     return (
-      <div id='services' className='service-section'>
-        <h1>SERVICES</h1>
-        <div className='content'>
-        <h2>Preserving The&nbsp; <span>Essence</span></h2>
-        <p>
-        Araniko is a highly dedicated team committed to promoting cultural sites in Nepal and worldwide. They tirelessly work to raise awareness, protect, and showcase the rAraniko's mission is to unveil Nepal's hidden beauty to the world by empowering users to independently explore its cultural sites. Through innovative technologies and sustainable practices, Araniko aims to foster appreciation, curiosity, and a lasting connection to Nepal's diverse cultural heritage. By providing resources and virtual experiences, Araniko enables individuals to experience the wonders of Nepal firsthand and promotes responsible tourism for the preservation of these sites.ich history and significance of these sites. Through events, partnerships, responsible tourism, and digital platforms, Araniko strives to preserve and elongate the lifespan of cultural heritage for future generations. 
-        </p>
+      <div className="workpage">
+      <div id='services' className="services-section">
+      <div className="slide-icon">
+          <img src={slideIcon} alt="Slide Icon" />
+        </div>
+          <p className="OurServices">Our Services</p>
+          <p className="OServices">Our <span>Services</span></p>
+  
+        {/* Create a container for the frame */}
+        <div className="frame-container">
+          {/* Rectangle with text overlapping at the bottom */}
+          <div className="frame">
+            <div className="image">
+              <img src={templeImage} alt="Work 1" />
+            </div>
+            <div className="text-overlay">
+              <h4>Name of heritage</h4>
+              <h5>Method used</h5>
+            </div>
+          </div>
+  
+          {/* Repeat the frame for more images */}
+          <div className="frame">
+            <div className="image">
+              <img src={templeImage} alt="Work 1" />
+            </div>
+            <div className="text-overlay">
+              <h4>Name of heritage</h4>
+              <h5>Method used</h5>
+            </div>
+          </div>
+          
+          <div className="frame">
+            <div className="image">
+              <img src={templeImage} alt="Work 1" />
+            </div>
+            <div className="text-overlay">
+              <h4>Name of heritage</h4>
+              <h5>Method used</h5>
+            </div>
+          </div>
+          {/* Add more frames as needed */}
         </div>
       </div>
-    )
-  }
+      </div>
+    );
+  };
   
   export default services;
+  

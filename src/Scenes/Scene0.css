@@ -1,88 +1,88 @@
-/* Set the scene to cover the entire viewport */
 .scene {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  height: 120vh;
   position: relative;
+  overflow: hidden;
 }
-
-/* Background */
-.background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-image: url(./images/Rectangle33.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-/* Sky */
-.sky {
-  width: 100%; /* Adjust percentage as needed */
-  height: auto; /* Maintain aspect ratio */
+.sun{
   position: absolute;
-  top: 31%; /* Adjust percentage as needed */
-  left: 1%; /* Adjust percentage as needed */
+  width: 120px;
+  height: 120px;
+  top: 235px;
+  left: 750px;
 }
-
-/* Forest */
-.forest {
-  width: 100%;
-  height: auto;
+.temple{
   position: absolute;
-  top: 55%;
-  left: 0%;
+  width: 481px;
+  height: 604px;
+  top: 70px;
+  left: 988px;
+  z-index: 4;
 }
-
-/* Sun */
-.Rectangle35 {
-  width: 13%;
-  height: auto;
+.forest{
   position: absolute;
-  top: 50%;
-  left: 40%;
+  width: 1480px;
+  height: 485px;
+  top: 180px;
+  left: -23px;
+  z-index: 1;
 }
-
-/* Vector */
-.Vector31 {
-  width: 100%; /* Adjust percentage as needed */
-  height: auto; /* Maintain aspect ratio */
+.hill{
   position: absolute;
-  top: 40%; /* Adjust percentage as needed */
-  left: 0%; /* Adjust percentage as needed */
+  width: 1520px;
+  height: 195px;
+  top: 452px;
+  left: -30px;
+  z-index: 2;
 }
-
-/* Mountains */
-.mountains {
-  width: 100%; /* Adjust percentage as needed */
-  height: auto; /* Maintain aspect ratio */
+.land{
   position: absolute;
-  top: 58%; /* Adjust percentage as needed */
-  left: 0%; /* Adjust percentage as needed */
+  width: 2171px;
+  height: 150px;
+  top: 550px;
+  left: -30px;
+  z-index: 3;
 }
+.stars{
+  position:absolute;
+  width: 120px;
+  height: 357px;
+  top: -320px;
+  left: -12px;
 
-/* Hills */
-.hill {
-  width: 100%;
-  height: auto;
+}
+.wave{
+  left: -250px;
+  top :630px;
+  /* bottom: -0px; */
   position: absolute;
-  top: 62%;
-  left: 0;
+  z-index: 6;
 }
-
-/* @media (max-width: 768px) {
-  .sky,
-  .forest,
-  .Rectangle35,
-  .Vector31,
-  .mountains,
-  .hill {
-
-      width: 100%; 
-      left: 0; 
-  }
-} */
+.explore-nepal{
+  justify-content: left;
+  position: absolute;
+  width: 754px;
+  height: 237px;
+  top: 150px;
+  left: 192px;
+  z-index: 5;
+}
+.ex-nepal{
+  position: absolute;
+  font-size: 72px;
+  left: -50px;
+}
+.embark{
+  position: absolute;
+  font-size: 18px;
+  left: -45px;
+  top: -1px;
+  font-weight: lighter;
+  color: #F5E290;
+}
+.get-started{
+  position: absolute;
+  left: -45px;
+  top: 192px;
+  color: #fff;
+}

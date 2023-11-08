@@ -1,0 +1,85 @@
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.search-container {
+  width: 350px;
+  line-height: 1.5;
+  z-index: 10;
+  position: absolute;
+  top: 5rem;
+  height: 90%;
+  margin-left: 1.5rem;
+  border-radius: 10px;
+  backdrop-filter: blur(5px); /* Adjust the blur value as needed */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Adjust the background color and opacity */
+}
+
+input {
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 20px;
+}
+.searchbar {
+  background-color: white;
+  width: 90%;
+  border: 1px solid;
+  margin: 0 10px;
+  padding: 0 8px;
+  margin-bottom: 10px;
+  border: 0px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h4 {
+  color: #31587a;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.border-none {
+  border: none;
+}
+
+.info {
+  margin: 10px 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust the shadow values as needed */
+}
+
+.m-0 {
+  margin: 0;
+}
+.p-0 {
+  padding: 0;
+}
+
+.right {
+  color: #31587a;
+  justify-content: end;
+}
+
+.text-center {
+  text-align: center;
+}

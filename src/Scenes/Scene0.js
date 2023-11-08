@@ -1,26 +1,44 @@
 import React from 'react';
 import "./Scene0.css";
-import skyImage1 from "./images/sky.png";
+import star from "./images/stars.png"
+import sun from "./images/circle.png";
 import forestImage from "./images/forest.png";
-import SunImage from "./images/Rectangle35.png";
-import VectorImage from "./images/Vector31.png";
-import MountainImage from "./images/mountains.png";
-import hillImage from "./images/hills.png";
+import Land from "./images/land.png";
+import Temple from "./images/temple.png";
+import hillImage from "./images/hill.png";
+import Buttons from '../components/Buttons/Button';
+import Wave from './images/wave.png'
 
-const Scene0 = () => {
+import { Link } from 'react-router-dom';
+
+const Scene = () => {
   return (
     <div className='scene'>
       <div className="background-image">
         {/* Static Background */}
       </div>
-      <img src={skyImage1} alt="Sky1" className='sky' />
-      <img src={SunImage} alt="Sun" className='Rectangle35' />
-      <img src={VectorImage} alt="vector" className='Vector31' />
-      <img src={MountainImage} alt="mountain" className='mountains' />
+      <img src={star} alt="Star" className='star' />
+      <img src={sun} alt="Sun" className='sun' />
+      <img src={Land} alt="Land" className='land' />
+      <img src={Temple} alt="Temple" className='temple' />
       <img src={forestImage} alt="forest1" className='forest' />
       <img src={hillImage} alt="hill" className='hill' />
+      <img src={Wave} alt="wave" className='wave' />
+      <div className="explore-nepal">
+        <h2 className='ex-nepal'>Explore Nepal</h2>
+        <h1 className='embark'>
+        Embark on a Virtual Voyage: Unveiling the Beauty of Nepal!
+        </h1>
+        <div className="get-started">
+        <Link to="/map">
+          <Buttons mode="hover" size="small">
+            Get Started
+          </Buttons>
+        </Link>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Scene0;
+export default Scene;
